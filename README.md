@@ -47,9 +47,11 @@ app, as long as the development server is running.
 Other useful commands:
 
 ```bash
-npm run lint    # run ESLint
-npm run build   # type-check and create a production build
-npm run preview # serve the production build locally
+npm run format       # format source files with Biome
+npm run format:check # check formatting without changing files
+npm run lint         # run Biome lint rules
+npm run build        # type-check and create a production build
+npm run preview      # serve the production build locally
 ```
 
 ## How the starter application works
@@ -120,7 +122,7 @@ about a fixed update cadence.
 | [React](https://react.dev/) | Component rendering and state management |
 | [Vuu](https://vuu.io/) | Data-source context, live table subscriptions, layout shell, table, icons, and theme |
 | [Salt](https://salt-ds.com/) | Design-system primitives used by Vuu |
-| [ESLint](https://eslint.org/) | Source-code linting |
+| [Biome](https://biomejs.dev/) | Source-code formatting and linting |
 
 The dependencies are locked in `package-lock.json`. Use `npm install` so your
 local environment matches the exercise configuration.

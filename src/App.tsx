@@ -1,11 +1,11 @@
-import { Shell } from '@vuu-ui/vuu-shell';
-import { layoutJSON } from './layoutJSON';
-import { AppHeader } from './components/app-header';
+import { Shell } from '@vuu-ui/vuu-shell'
+import { layoutJSON } from './layoutJSON'
+import { AppHeader } from './components/app-header'
 
-import './App.css';
+import './App.css'
 
 function App() {
-  console.log('render App');
+  console.log('render App')
   return (
     <Shell
       shellLayoutProps={{
@@ -19,7 +19,7 @@ function App() {
       serverUrl="ws://localhost:8090/websocket"
       user={{ username: 'guest' }}
     />
-  );
+  )
 }
 
-export default App;
+export default App

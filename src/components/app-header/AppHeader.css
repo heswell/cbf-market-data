@@ -6,7 +6,7 @@
 }
 
 .Logo {
-  background-image: url('/cbf_logo.png');
+  background-image: url("/cbf_logo.png");
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;

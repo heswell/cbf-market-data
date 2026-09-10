@@ -1,40 +1,40 @@
-import { Table, VuuModule } from '@vuu-ui/vuu-data-test';
-import { TableSchema } from '@vuu-ui/vuu-data-types';
-import { AlgoTableName, schemas } from './algo-schemas';
-import { pricesTable } from './pricesTable';
+import { type Table, VuuModule } from '@vuu-ui/vuu-data-test'
+import type { TableSchema } from '@vuu-ui/vuu-data-types'
+import { type AlgoTableName, schemas } from './algo-schemas'
+import { pricesTable } from './pricesTable'
 
 const tables: Record<AlgoTableName, Table> = {
   prices: pricesTable,
-};
+}
 
 class AlgoModule extends VuuModule<AlgoTableName> {
   constructor() {
-    super('ALGO');
+    super('ALGO')
   }
 
   protected get schemas(): Record<AlgoTableName, Readonly<TableSchema>> {
-    return schemas;
+    return schemas
   }
 
   protected get tables(): Record<AlgoTableName, Table> {
-    return tables;
+    return tables
   }
 
   protected get menus() {
-    return undefined;
+    return undefined
   }
 
   protected get menuServices() {
-    return undefined;
+    return undefined
   }
 
   protected get services() {
-    return undefined;
+    return undefined
   }
 
   protected get visualLinks() {
-    return undefined;
+    return undefined
   }
 }
 
-export const algoModule = new AlgoModule();
+export const algoModule = new AlgoModule()

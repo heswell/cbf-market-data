@@ -7,7 +7,9 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      'reset.css': fileURLToPath(new URL('./src/vuu-reset.css', import.meta.url)),
+      'reset.css': fileURLToPath(
+        new URL('./src/vuu-reset.css', import.meta.url),
+      ),
     },
   },
 })

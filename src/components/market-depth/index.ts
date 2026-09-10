@@ -1,1 +1,1 @@
-export * from './MarketDepthFeature';
+export * from './MarketDepthFeature'
