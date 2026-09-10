@@ -111,8 +111,7 @@ Suggested approach:
    when updates arrive.
 2. Start by calling the `useMarketDepthData` hook and logging the result with
    `console.table`.
-3. Limit the display to the first 10 levels and render bid and offer quantities,
-   prices, and directional indicators.
+3. Render bid and offer quantities, prices, and directional indicators.
 4. Derive each quantity bar's width from its quantity relative to the largest
    visible quantity. Do not hard-code widths.
 5. Retain the previous bid and offer prices in component state or a ref so each
