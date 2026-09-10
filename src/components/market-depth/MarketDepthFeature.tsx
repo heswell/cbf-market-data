@@ -1,4 +1,4 @@
-import { Placeholder } from '../placeholder'
+import { Placeholder } from '../placeholder/Placeholder'
 // import { useMarketDepthData } from "./useMarketDepthData";
 //import { schemas } from "../../data/algo-schemas";
 
