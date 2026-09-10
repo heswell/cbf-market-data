@@ -58,6 +58,12 @@ when you save a source file. You can edit files under `src/` and see the change
 in the browser automatically, without manually rebuilding or restarting the
 app, as long as the development server is running.
 
+When the application starts, the Vuu table displays the live market-depth data
+that your component will use, and the placeholder marks where your component
+will appear:
+
+![Market Depth starter application](public/market-data-app.png)
+
 Other useful commands:
 
 ```bash
