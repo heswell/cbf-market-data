@@ -1,10 +1,10 @@
-import { Table } from '@vuu-ui/vuu-table';
-import { TableConfig } from '@vuu-ui/vuu-table-types';
-import { useData } from '@vuu-ui/vuu-utils';
-import { useMemo } from 'react';
+import { Table } from '@vuu-ui/vuu-table'
+import type { TableConfig } from '@vuu-ui/vuu-table-types'
+import { useData } from '@vuu-ui/vuu-utils'
+import { useMemo } from 'react'
 
 export const PricesTable = () => {
-  const { VuuDataSource } = useData();
+  const { VuuDataSource } = useData()
   const dataSource = useMemo(
     () =>
       new VuuDataSource({
@@ -18,8 +18,8 @@ export const PricesTable = () => {
         ],
         table: { module: 'ALGO', table: 'prices' },
       }),
-    [VuuDataSource]
-  );
+    [VuuDataSource],
+  )
 
   const config = useMemo<TableConfig>(
     () => ({
@@ -58,8 +58,8 @@ export const PricesTable = () => {
       zebraStripes: true,
     }),
 
-    []
-  );
+    [],
+  )
 
-  return <Table config={config} dataSource={dataSource} />;
-};
+  return <Table config={config} dataSource={dataSource} />
+}

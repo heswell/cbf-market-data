@@ -1,5 +1,5 @@
-import { TableSchema } from '@vuu-ui/vuu-data-types';
-import { VuuTable } from '@vuu-ui/vuu-protocol-types';
+import type { TableSchema } from '@vuu-ui/vuu-data-types'
+import type { VuuTable } from '@vuu-ui/vuu-protocol-types'
 
 export const schemas: Readonly<Record<AlgoTableName, Readonly<TableSchema>>> = {
   prices: {
@@ -39,13 +39,13 @@ export const schemas: Readonly<Record<AlgoTableName, Readonly<TableSchema>>> = {
     ],
     key: 'symbolLevel',
   },
-};
+}
 
-export type AlgoTableName = 'prices';
+export type AlgoTableName = 'prices'
 export type AlgoVuuTable = {
-  module: 'ALGO';
-  table: AlgoTableName;
-};
+  module: 'ALGO'
+  table: AlgoTableName
+}
 
 export const isAlgoTable = (vuuTable: VuuTable): vuuTable is AlgoVuuTable =>
-  vuuTable.module === 'ALGO' && vuuTable.table === 'prices';
+  vuuTable.module === 'ALGO' && vuuTable.table === 'prices'

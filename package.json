@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "lint": "biome lint .",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -23,7 +25,7 @@
     "react-dom": "^19.2.3"
   },
   "devDependencies": {
-    "@eslint/js": "^9.10.0",
+    "@biomejs/biome": "^2.5.13",
     "@types/node": "^24.13.4",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
@@ -31,12 +33,7 @@
     "@vuu-ui/vuu-data-types": "^3.3.8",
     "@vuu-ui/vuu-protocol-types": "^3.3.8",
     "@vuu-ui/vuu-table-types": "^3.3.8",
-    "eslint": "^9.10.0",
-    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
-    "eslint-plugin-react-refresh": "^0.4.11",
-    "globals": "^15.9.0",
     "typescript": "^5.5.3",
-    "typescript-eslint": "^8.4.0",
     "vite": "^5.4.3"
   }
 }

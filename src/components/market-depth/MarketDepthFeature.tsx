@@ -1,4 +1,4 @@
-import { Placeholder } from '../placeholder';
+import { Placeholder } from '../placeholder'
 // import { useMarketDepthData } from "./useMarketDepthData";
 //import { schemas } from "../../data/algo-schemas";
 
@@ -7,5 +7,5 @@ import { Placeholder } from '../placeholder';
  */
 export const MarketDepthFeature = () => {
   // const data = useMarketDepthData(schemas.prices);
-  return <Placeholder />;
-};
+  return <Placeholder />
+}
