@@ -2,6 +2,15 @@
 
 The code in this repository is the starting point for this training exercise.
 
+## Getting the code
+
+Clone the repository and enter its top-level folder:
+
+```bash
+git clone https://github.com/heswell/cbf-market-data.git
+cd cbf-market-data
+```
+
 Your task is to replace the placeholder in
 `src/components/market-depth/MarketDepthFeature.tsx` with a market-depth
 component that renders the same live tabular data as the table above it. Use
