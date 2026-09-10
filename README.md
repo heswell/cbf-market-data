@@ -51,7 +51,8 @@ Vuu styles, creates the React root, and wraps the application in
 
 `TestDataProvider` uses Vuu's `LocalDataSourceProvider`. Importing
 `src/data/algo-module.ts` registers the local `ALGO` module, which exposes the
-`prices` table. No server is required for this exercise.
+`prices` table. This simulates the behaviour of a Vuu server. No server is
+required for this exercise.
 
 The source table is defined in `src/data/pricesTable.ts`:
 
