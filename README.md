@@ -20,6 +20,16 @@ Your task is to replace the placeholder in
 component that renders the same live tabular data as the table above it. Use
 [`public/market-depth.png`](public/market-depth.png) as the visual reference.
 
+> **What is Market Depth?**
+>
+> A trading exchange's order book records outstanding buy orders (bids) and sell
+> orders (offers) for an instrument at each price. Market depth shows how much
+> quantity is available on each side of that book. Level 1 data shows only the
+> best bid and best offer. Level 2 data shows the aggregated available quantity
+> at multiple price levels on both sides of the book. Level 3 data includes the
+> individual orders that make up those levels, typically with order-level detail
+> for participants. This component displays Level 2 data.
+
 ![Market depth reference](public/market-depth.png)
 
 The finished component should present the top 10 price levels of market depth.
