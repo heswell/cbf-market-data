@@ -10,6 +10,8 @@ component that renders the same live tabular data as the table above it. Use
 ![Market depth reference](public/market-depth.png)
 
 The finished component should present the top 10 price levels of market depth.
+Test data is already provided with exactly the data you need, and you can see it
+rendered in a regular Vuu table when you run the app.
 It must remain connected to the existing live data source: quantity bars should
 grow and shrink as quantities update, and direction arrows should change between
 up and down as prices move.
