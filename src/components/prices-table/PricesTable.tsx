@@ -24,6 +24,7 @@ export const PricesTable = () => {
   const config = useMemo<TableConfig>(
     () => ({
       columnLayout: 'fit',
+      columnSeparators: true,
       columns: [
         {
           name: 'bid',
@@ -54,6 +55,7 @@ export const PricesTable = () => {
           serverDataType: 'string',
         },
       ],
+      zebraStripes: true,
     }),
 
     []
