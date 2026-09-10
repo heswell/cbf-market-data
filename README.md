@@ -128,6 +128,10 @@ inspect the live rows and verify that the new component represents the same
 data. The feature should handle its initial loading state and avoid assumptions
 about a fixed update cadence.
 
+> **Tip:** To make debugging easier, you can increase `UPDATE_FREQUENCY` in
+> `src/data/MarketDataGenerator.ts` from its current 250 ms value. A higher
+> value slows the simulated price updates.
+
 ## Tooling overview
 
 | Tool | Role |
