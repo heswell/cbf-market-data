@@ -1,8 +1,6 @@
 # Market Depth exercise
 
 The code in this repository is the starting point for this training exercise.
-You will take this code and create a brand new `MarketDepth` component to
-replace the existing `Placeholder`.
 
 Your task is to replace the placeholder in
 `src/components/market-depth/MarketDepthFeature.tsx` with a market-depth
