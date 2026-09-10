@@ -109,8 +109,8 @@ Suggested approach:
 
 1. Decide how the component decomposes into smaller components. It could be
    implemented as one large component, but it is better practice to split
-   pieces into smaller, specialised components that the `MarketDepth` parent
-   component uses.
+   smaller specialised pieces of functionality into separate components that
+   the `MarketDepth` parent component then uses.
 2. Use the supplied `useMarketDepthData` hook to receive live rows and re-render
    when updates arrive.
 3. Start by calling the `useMarketDepthData` hook and logging the result with
