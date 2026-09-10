@@ -1,10 +1,10 @@
-import { useDataSource } from '@vuu-ui/vuu-shell';
 import { Table } from '@vuu-ui/vuu-table';
 import { TableConfig } from '@vuu-ui/vuu-table-types';
+import { useData } from '@vuu-ui/vuu-utils';
 import { useMemo } from 'react';
 
 export const PricesTable = () => {
-  const { VuuDataSource } = useDataSource();
+  const { VuuDataSource } = useData();
   const dataSource = useMemo(
     () =>
       new VuuDataSource({
@@ -24,6 +24,7 @@ export const PricesTable = () => {
   const config = useMemo<TableConfig>(
     () => ({
       columnLayout: 'fit',
+      columnSeparators: true,
       columns: [
         {
           name: 'bid',
@@ -54,6 +55,7 @@ export const PricesTable = () => {
           serverDataType: 'string',
         },
       ],
+      zebraStripes: true,
     }),
 
     []
