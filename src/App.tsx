@@ -17,7 +17,7 @@ function App() {
       }}
       className="App"
       serverUrl="ws://localhost:8090/websocket"
-      user={{ token: 'test', username: 'guest' }}
+      user={{ username: 'guest' }}
     />
   );
 }
