@@ -109,7 +109,7 @@ Suggested approach:
 
 1. Create a Vuu data source for the `ALGO/prices` table, requesting only the
    fields the display needs.
-2. Use the appropriate Vuu React data hook to subscribe to rows and re-render
+2. Use the supplied `useMarketDepthData` hook to receive live rows and re-render
    when updates arrive.
 3. Limit the display to the first 10 levels and render bid and offer quantities,
    prices, and directional indicators.
