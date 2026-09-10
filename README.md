@@ -94,8 +94,10 @@ Suggested approach:
    arrow treatment.
 6. Add component-scoped styles alongside the feature and use the image as the
    guide for spacing, colour, typography, alignment, and bar layering.
+7. Once you are done, feel free to remove the table or rearrange the layout as
+   you see fit. The exercise is all about the `MarketDepth` component.
 
-Keep the existing table in place while developing: it is the easiest way to
+While developing, keep the existing table in place: it is the easiest way to
 inspect the live rows and verify that the new component represents the same
 data. The feature should handle its initial loading state and avoid assumptions
 about a fixed update cadence.
