@@ -1,6 +1,6 @@
 import { Shell } from '@vuu-ui/vuu-shell'
 import { layoutJSON } from './layoutJSON'
-import { AppHeader } from './components/app-header'
+import { AppHeader } from './components/app-header/AppHeader'
 
 import './App.css'
 

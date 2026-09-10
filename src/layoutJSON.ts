@@ -1,6 +1,6 @@
 import { registerComponent } from '@vuu-ui/vuu-utils'
-import { MarketDepthFeature } from './components/market-depth'
-import { PricesTable } from './components/prices-table'
+import { MarketDepthFeature } from './components/market-depth/MarketDepthFeature'
+import { PricesTable } from './components/prices-table/PricesTable'
 import { Flexbox } from '@vuu-ui/vuu-layout'
 
 registerComponent('MarketDepthFeature', MarketDepthFeature, 'view')
