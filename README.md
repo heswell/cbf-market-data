@@ -18,15 +18,22 @@ rendered in a regular Vuu table when you run the app.
 
 ## Running the application
 
-Install dependencies and start the Vite development server:
+From the top-level folder of this repository (the folder containing
+`package.json`), install dependencies and start the Vite development server:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Vite prints the local URL to open, normally `http://localhost:5173`. Changes to
-source files are applied through hot module replacement.
+`npm run dev` starts Vite's local development server and prints the URL to
+open, normally `http://localhost:5173`. Keep this command running while you
+work.
+
+Vite uses hot module replacement (HMR), which updates the running application
+when you save a source file. You can edit files under `src/` and see the change
+in the browser automatically, without manually rebuilding or restarting the
+app, as long as the development server is running.
 
 Other useful commands:
 
