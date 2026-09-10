@@ -11,6 +11,10 @@ git clone https://github.com/heswell/cbf-market-data.git
 cd cbf-market-data
 ```
 
+If you use Visual Studio Code, install the
+[Biome extension](https://marketplace.visualstudio.com/items?itemName=biomejs.biome)
+for in-editor formatting and lint feedback.
+
 Your task is to replace the placeholder in
 `src/components/market-depth/MarketDepthFeature.tsx` with a market-depth
 component that renders the same live tabular data as the table above it. Use
