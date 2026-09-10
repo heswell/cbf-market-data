@@ -107,20 +107,23 @@ the generator. `src/components/market-depth/useMarketDepthData.ts` provides a
 
 Suggested approach:
 
-1. Use the supplied `useMarketDepthData` hook to receive live rows and re-render
+1. Decide how the component decomposes into smaller components. It could be
+   implemented as one large component, but it is better practice to split
+   pieces into smaller, specialised components that the `MarketDepth` parent
+   component uses.
+2. Use the supplied `useMarketDepthData` hook to receive live rows and re-render
    when updates arrive.
-2. Start by calling the `useMarketDepthData` hook and logging the result with
+3. Start by calling the `useMarketDepthData` hook and logging the result with
    `console.table`.
-3. Limit the display to the first 10 levels and render bid and offer quantities,
-   prices, and directional indicators.
-4. Derive each quantity bar's width from its quantity relative to the largest
+4. Render bid and offer quantities, prices, and directional indicators.
+5. Derive each quantity bar's width from its quantity relative to the largest
    visible quantity. Do not hard-code widths.
-5. Retain the previous bid and offer prices in component state or a ref so each
+6. Retain the previous bid and offer prices in component state or a ref so each
    update can be classified as up, down, or unchanged before selecting the
    arrow treatment.
-6. Add component-scoped styles alongside the feature and use the image as the
+7. Add component-scoped styles alongside the feature and use the image as the
    guide for spacing, colour, typography, alignment, and bar layering.
-7. Once you are done, feel free to remove the table or rearrange the layout as
+8. Once you are done, feel free to remove the table or rearrange the layout as
    you see fit. The exercise is all about the `MarketDepth` component.
 
 While developing, keep the existing table in place: it is the easiest way to
