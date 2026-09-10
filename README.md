@@ -101,14 +101,15 @@ the `MarketDepthFeature` placeholder in vertically resizable views.
 
 Start in `src/components/market-depth/MarketDepthFeature.tsx`. The component
 should subscribe to `ALGO/prices` rather than duplicating or polling the data
-generator. Reuse the existing Vuu data-source context and the same table
-identity used by `PricesTable`.
+generator. `src/components/market-depth/useMarketDepthData.ts` provides a
+`useMarketDepthData` hook that subscribes to this table and returns sorted
+`MarketDepthRow` values for the component to render.
 
 Suggested approach:
 
 1. Create a Vuu data source for the `ALGO/prices` table, requesting only the
    fields the display needs.
-2. Use the appropriate Vuu React data hook to subscribe to rows and re-render
+2. Use the supplied `useMarketDepthData` hook to receive live rows and re-render
    when updates arrive.
 3. Limit the display to the first 10 levels and render bid and offer quantities,
    prices, and directional indicators.
