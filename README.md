@@ -4,12 +4,8 @@ The code in this repository is the starting point for this training exercise.
 
 ## Getting the code
 
-Clone the repository and enter its top-level folder:
+Fork repository and enter its top-level folder:
 
-```bash
-git clone https://github.com/heswell/cbf-market-data.git
-cd cbf-market-data
-```
 
 If you use Visual Studio Code, install the
 [Biome extension](https://marketplace.visualstudio.com/items?itemName=biomejs.biome)
