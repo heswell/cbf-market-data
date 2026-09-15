@@ -1,11 +1,13 @@
-import { Placeholder } from '../placeholder/Placeholder'
-// Uncomment this import to access the live market depth data.
-// import { useMarketDepthData } from './useMarketDepthData'
+import { Placeholder } from '../placeholder/Placeholder';
+import { useMarketDepthData } from './useMarketDepthData';
 
 /**
  * TODO
  */
 export const MarketDepthFeature = () => {
+  const data = useMarketDepthData();
+  // Uncomment and open devtools conbsole to inspect data 
+  //console.table(data);
   return (
     <>
       {/* Remove this placeholder. */}
