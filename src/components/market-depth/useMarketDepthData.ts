@@ -1,6 +1,5 @@
 import type {
   DataSourceSubscribeCallback,
-  TableSchema,
 } from '@vuu-ui/vuu-data-types'
 import type { VuuDataRow } from '@vuu-ui/vuu-protocol-types'
 import {
@@ -10,6 +9,9 @@ import {
   useData,
 } from '@vuu-ui/vuu-utils'
 import { useCallback, useEffect, useMemo, useState } from 'react'
+import { schemas } from '../../data/algo-schemas';
+
+const pricesTableSchema = schemas.prices
 
 export type MarketDepthRow = {
   bid: number
@@ -78,11 +80,11 @@ class MarketPriceLevelStore {
   }
 }
 
-export const useMarketDepthData = (schema: TableSchema) => {
+export const useMarketDepthData = () => {
   const [, forceUpdate] = useState(0)
   const dataStore = useMemo(
-    () => new MarketPriceLevelStore(buildColumnMap(schema.columns)),
-    [schema.columns],
+    () => new MarketPriceLevelStore(buildColumnMap(pricesTableSchema.columns)),
+    [],
   )
   const { VuuDataSource } = useData()
 
@@ -103,15 +105,15 @@ export const useMarketDepthData = (schema: TableSchema) => {
 
     void dataSource.subscribe(
       {
-        columns: schema.columns.map((column) => column.name),
-        range: Range(0, 10),
+        columns: pricesTableSchema.columns.map((column) => column.name),
         sort: { sortDefs: [{ column: 'level', sortType: 'A' }] },
       },
       datasourceMessageHandler,
-    )
+    );
+    dataSource.range = Range(0, 10);
 
     return () => dataSource.unsubscribe()
-  }, [VuuDataSource, datasourceMessageHandler, schema.columns])
+  }, [VuuDataSource, datasourceMessageHandler])
 
   return dataStore.data
 }
