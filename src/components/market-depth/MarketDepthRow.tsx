@@ -53,6 +53,7 @@ export const MarketDepthRow = ({
         <div className="marketDepth__priceContent">
           <span
             className={`marketDepth__direction marketDepth__direction--${bidDirection}`}
+            role="img"
             aria-label={`Bid price ${bidDirection}`}
           >
             {directionSymbol[bidDirection]}
@@ -66,6 +67,7 @@ export const MarketDepthRow = ({
           <span>{row.offer.toFixed(2)}</span>
           <span
             className={`marketDepth__direction marketDepth__direction--${offerDirection}`}
+            role="img"
             aria-label={`Ask price ${offerDirection}`}
           >
             {directionSymbol[offerDirection]}
