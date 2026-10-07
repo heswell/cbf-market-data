@@ -1,0 +1,76 @@
+.market-depth {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+  font-size: 14px;
+  background: rgb(1, 31, 63);
+  color: white;
+  text-align: center;
+}
+
+.bid-ask-rows {
+  font-size: 24px;
+}
+
+.bid-ask-rows th {
+  padding: 20px;
+}
+
+.bid-ask-rows th:nth-child(2) {
+  background: rgb(6, 66, 114);
+}
+
+.bid-ask-rows th:nth-child(3) {
+  background: rgb(185, 41, 41);
+}
+
+.market-depth-rows {
+  font-size: 16px;
+}
+
+.market-depth th,
+.market-depth td {
+  border: 1px solid #ccc;
+}
+
+.market-depth tbody {
+  font-weight: 700;
+}
+
+.level {
+  color: rgb(162, 159, 159);
+}
+
+.bid-ask-cell {
+  position: relative;
+}
+
+.bid-quantity-cell {
+  position: relative;
+}
+.bid-bar {
+  position: absolute;
+  z-index: 0;
+}
+
+.quantity-bar {
+  background: rgb(25, 114, 187);
+  inset: 0 0 0 auto;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.ask-bar {
+  background: rgb(197, 48, 48);
+  inset: 0 auto 0 0;
+}
+
+.quantity-text {
+  position: relative;
+}
+
+.arrow {
+  margin-left: 4px;
+}
