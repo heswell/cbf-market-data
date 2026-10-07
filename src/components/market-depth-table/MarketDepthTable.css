@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Table{
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.Table table{
+    width: 35%;
+    text-align: center;
+}
+
+.Table table,
+.Table td,
+.Table th {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+.Table #Table-mainHeader th{
+    padding: 10px;
+}
+
+.Table #Table-subHeader th,
+.Table tbody tr td>div>div{
+    padding: 5px; 
+    font-size: 13px;
+}
+
+.Table tbody tr td>div{
+    height: 30px;
+}
+
+.Table .Price>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Table-quantity{
+    display: flex;
+    color: white;
+}
+
+.Table-quantity-blue-reverse-display{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Table-quantity-blue-reverse-display > div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+}
+
+.Table-quantity>div,
+.Price-index{
+    display: flex;
+    align-items: center;
+}
+
+.Price-reverse>div{
+    flex-direction: row-reverse;
+}
+
+.Table-arrow-icon{
+    width: 16px;
+    height: 16px;
+}
+
+.Price-index{
+    justify-content: center;
+}
