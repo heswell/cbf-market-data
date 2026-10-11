@@ -1,6 +1,4 @@
-import type {
-  DataSourceSubscribeCallback,
-} from '@vuu-ui/vuu-data-types'
+import type { DataSourceSubscribeCallback } from '@vuu-ui/vuu-data-types'
 import type { VuuDataRow } from '@vuu-ui/vuu-protocol-types'
 import {
   buildColumnMap,
@@ -9,7 +7,7 @@ import {
   useData,
 } from '@vuu-ui/vuu-utils'
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import { schemas } from '../../data/algo-schemas';
+import { schemas } from '../../data/algo-schemas'
 
 const pricesTableSchema = schemas.prices
 
@@ -109,8 +107,8 @@ export const useMarketDepthData = () => {
         sort: { sortDefs: [{ column: 'level', sortType: 'A' }] },
       },
       datasourceMessageHandler,
-    );
-    dataSource.range = Range(0, 10);
+    )
+    dataSource.range = Range(0, 10)
 
     return () => dataSource.unsubscribe()
   }, [VuuDataSource, datasourceMessageHandler])
